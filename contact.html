@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="src/styles/designSystem.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/images/Logo/LogoWhite.svg">
+</head>
+
+<body style="background-color: #74c69d; width: 100%;">
+
+    <div class="navbar container">
+        <div class="navbar__logo">
+            <img src="src/images/Logo/LogoWhite.svg" alt="" class="navbar__logo--image">
+            <div class="navbar__logo--text">Development Agency</div>
+        </div>
+        <div class="navbar__menu hidden">
+            <a href="index.html" class="navbar__menu--1">Home</a>
+            <a href="portfolio.html" class="navbar__menu--2">Portfolio</a>
+            <a href="services.html" class="navbar__menu--3">Services</a>
+            <a href="contact.html" class="navbar__menu--4">Contact</a>
+            <!-- Download Button -->
+            <a href="IEEE-BD-Zhang-2023.pdf"  download="IEEE-BD-Zhang-2023.pdf">
+                <button class="download-btn">Download SRS</button>
+            </a>
+
+        </div>
+
+        <div class="navbar__icons">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x-lg hide"></i>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <div class="contact-form-container">
+            <h2 class="contact-form-heading">Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="mobile-number">Mobile Number</label>
+                <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script src="src/main.js"></script>
+
+</html>
